@@ -26,6 +26,12 @@ public class PasswordGen {
         btnGeneratePassword.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                //validate cboCharCount value - must be above 1
+                if (cboCharCount.getSelectedIndex() == -1){
+                    JOptionPane.showMessageDialog(new JFrame(), "You must tell me how many characters!","Invalid Input", JOptionPane.ERROR_MESSAGE);
+                    throw new IllegalArgumentException("cboCharCount.getSelectedIndex() must be greater than -1");
+                }
+
                 //centre the text
                 txtPassword.setHorizontalAlignment(SwingConstants.CENTER);
 
