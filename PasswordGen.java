@@ -13,8 +13,6 @@ public class PasswordGen {
     private JComboBox cboCharCount;
     private JTextField txtPassword;
     private JButton btnCopy;
-    private JTextField txtPassName;
-    private JButton btnSavePassword;
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("PasswordGen");
@@ -24,6 +22,9 @@ public class PasswordGen {
         frame.setVisible(true);
     }
 
+
+    /*This comment is a test for GitHub, as I am new to it
+    * If it stays in the final version then please ignore this*/
 
     public PasswordGen() {
         btnGeneratePassword.addActionListener(new ActionListener() {
