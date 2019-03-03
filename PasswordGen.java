@@ -22,10 +22,6 @@ public class PasswordGen {
         frame.setVisible(true);
     }
 
-
-    /*This comment is a test for GitHub, as I am new to it
-    * If it stays in the final version then please ignore this*/
-
     public PasswordGen() {
         btnGeneratePassword.addActionListener(new ActionListener() {
             @Override
